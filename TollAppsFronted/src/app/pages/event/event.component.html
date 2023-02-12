@@ -1,0 +1,19 @@
+<div class="background">
+
+  <p *ngIf="currentEvent?.id !== -1" class="username">Üdv {{username}}</p>
+
+  <app-card-event></app-card-event>
+
+  <div *ngIf="applying" (click)="applying = false" class="modal">
+    <div (click)="$event.stopPropagation()" class="applying">
+      <p class="applying-title">Hányan fogtok jönni?</p>
+      <div class="applying-input">
+        <input style="width: 100%" type="range" id="vol" name="vol" min="0" max="2" [(ngModel)]="applicationType">
+        <p style="text-align: center">{{applicationType === 0 ? 'Egyedül' : applicationType === 1 ? 'Te + 1 Fő' : 'Te + 2 Fő'}}</p>
+      </div>
+      <button (click)="saveApplication()" class="btn btn-blue">Mentés</button>
+    </div>
+  </div>
+
+</div>
+<app-alert></app-alert>

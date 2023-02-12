@@ -1,0 +1,35 @@
+.btn {
+  margin: 0;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  background: #0088ff;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+
+    &:hover {
+      cursor: default;
+      opacity: 0.5;
+    }
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.btn-add {
+  background: #327300;
+  color: white;
+}
+.btn-remove {
+  background: #b30000;
+  color: white;
+}

@@ -1,0 +1,12 @@
+
+TollAppsFronted/.angular/
+
+TollAppsFronted/.idea/
+
+TollAppsFronted/node_modules/
+
+TollAppsFronted/.vscode/
+
+TollAppsFronted/domain.crt
+
+TollAppsFronted/domain.key

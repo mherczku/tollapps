@@ -1,0 +1,13 @@
+<div *ngIf="_currentEvent.id !== -1" class="event-container">
+
+  <p class="event-title">Tollas - {{_currentEvent.date | date:'y, MMMM d'}} - Vasárnap</p>
+
+  <p class="p-title">Jelentkeztek:</p>
+  <div class="event-participants">
+    <p *ngFor="let p of _currentEvent.participants" class="event-participant">{{p}}</p>
+  </div>
+
+  <button [disabled]="deadLined" class="btn" (click)="applyBtnClicked()" [ngClass]="applied ? 'btn-remove' : 'btn-add'">{{applied ? 'Jelentkezés törlése' : 'Jelentkezés'}}</button>
+
+  <p class="deadline">Határidő: {{deadLined ? 'Lejárt' : _currentEvent.deadline | date:'y, MMMM d, hh:mm'}} - Péntek hajnal</p>
+</div>
