@@ -1,1 +1,13 @@
-<p>login works!</p>
+<div>
+  <section class="frame-login">
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()" class="background-color card-form">
+      <label class="label-input tx-xl tx-bold">Felhasználónév</label>
+      <input autofocus autocapitalize="on" formControlName="name" class="input-text tx-lg tx-center" placeholder="Név" type="text">
+      <!--<label>Jelszó</label>
+      <input type="password">-->
+      <button type="submit" [disabled]="!loginForm.valid" class="btn tx-white">Belépés</button>
+    </form>
+
+  </section>
+</div>

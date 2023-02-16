@@ -1,0 +1,51 @@
+
+
+
+.frame-login {
+
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  max-width: 100%;
+
+
+  .card-form {
+
+/*    border-radius: 24px;
+    background: #73675d;*/
+
+
+    padding: 2rem;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+
+    .label-input {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .input-text {
+      border: 0;
+      padding: 0.4rem;
+      background: whitesmoke;
+      border-radius: 5px;
+      outline: none;
+      opacity: 0.7;
+      margin: 0 0 1.5rem;
+
+      &:focus {
+        border: 0;
+      }
+    }
+
+
+  }
+
+
+
+}

@@ -7,6 +7,22 @@
   box-sizing: border-box;
 }
 
+body {
+
+  background: rgb(33 33 33);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 p {
   margin: 0;
+}
+
+.background-color {
+  background: linear-gradient(249deg, #44ff00, #00a0ff);
+  background-size: 360% 360%;
+  animation: gradient-animation 40s ease infinite;
+  width: fit-content;
+  border-radius: 10px;
 }

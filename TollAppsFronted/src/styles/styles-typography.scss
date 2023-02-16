@@ -1,0 +1,79 @@
+
+:root {
+  font-size: clamp(16px, 0.25vw + 15.26px, 20px);
+}
+
+
+
+
+/*
+$font-size-xs: clamp(0.64rem, 0.05vw + 0.63rem, 0.67rem);
+$font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+$font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+$font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+$font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+$font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+$font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+$ont-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+$font-size-xxxxl: clamp(3.81rem, 5.18vw + 2.52rem, 6.66rem);
+*/
+
+
+.tx-bold {
+  font-weight: bold;
+}
+.tx-center {
+  text-align: center;
+}
+.tx-white {
+  color: white;
+}
+
+.tx {
+
+}
+
+.tx-xs {
+  @extend .tx;
+  font-size: 0.8rem;
+}
+
+.tx-sm {
+  @extend .tx;
+  font-size: 0.9rem;
+}
+
+.tx-base {
+  @extend .tx;
+  font-size: 1rem;
+}
+
+.tx-md {
+  @extend .tx;
+  font-size: 1.3rem;
+}
+
+.tx-lg {
+  @extend .tx;
+  font-size: 1.6rem;
+}
+
+.tx-xl {
+  @extend .tx;
+  font-size: 1.9rem;
+}
+
+.tx-xxl {
+  @extend .tx;
+  font-size: 2.3rem;
+}
+
+.tx-xxxl {
+  @extend .tx;
+  font-size: 2.5rem;
+}
+
+.tx-xxxxl {
+  @extend .tx;
+  font-size: 3rem;
+}

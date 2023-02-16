@@ -1,20 +1,22 @@
+.background-color {
+  margin: 0 1rem;
+}
 .event-container {
   max-width: 500px;
-  background: rgba( 255, 255, 255, 0.25 );
+  background: rgba( 255, 255, 255, 0.4);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 5px );
   -webkit-backdrop-filter: blur( 5px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
-  padding: 2rem;
-
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .event-title {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   text-align: center;
   word-break: break-word;
@@ -23,25 +25,33 @@
 .event-participants {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   align-items: center;
   width: 100%;
 }
 
 .event-participant {
-  font-size: 1.5rem;
-  font-weight: normal;
-  text-align: center;
-  padding: 3px;
-  background: whitesmoke;
+  p {
+    font-size: 1.3rem;
+    font-weight: normal;
+    text-align: center;
+  }
+  svg {
+    width: 2.5rem;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   border-radius: 5px;
   width: 100%;
+  margin-left: -25px;
 }
 .deadline {
   color: red;
+  text-align: center;
 }
 .p-title {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 600;
   width: 100%;
   text-align: center;

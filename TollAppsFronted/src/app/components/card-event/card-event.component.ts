@@ -39,6 +39,7 @@ export class CardEventComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.getCurrentEventData()
+    this.eventService.subscribe()
   }
 
   private checkDeadLine() {
@@ -95,6 +96,7 @@ export class CardEventComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.subsDestroy.next("")
     this.subsDestroy.complete()
+    this.eventService.closeSubscription()
   }
 
 

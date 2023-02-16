@@ -12,6 +12,7 @@ export class EventService {
   private baseUrl = environment.apiBaseUrl;
   constructor(private http: HttpClient) { }
 
+  private eventSource?: EventSource
   private currentEvent: BehaviorSubject<Event> = new BehaviorSubject<Event>({id: -1, date: new Date, deadline: new Date, participants: []});
   currentEventWatch(): Observable<Event> {
     return this.currentEvent.asObservable();
@@ -31,12 +32,25 @@ export class EventService {
     this.username.next(name)
   }
 
-
   public login(name: string): Observable<Response> {
     const params = new HttpParams()
       .set('name', name);
 
     return this.http.post<Response>(`${this.baseUrl}/events/login`, undefined, {params});
+  }
+
+  subscribe() {
+    this.eventSource = new EventSource(`${this.baseUrl}/events/sse`);
+    //let subscription = new Subject();
+    this.eventSource.addEventListener("message", event=> {
+      const newEvent: Event = JSON.parse(event.data)
+      this.currentEvent.next(newEvent)
+    });
+    //return subscription;
+  }
+
+  closeSubscription() {
+    this.eventSource?.close()
   }
 
   public getCurrentEvent(name: string): Observable<Event> {

@@ -4,11 +4,7 @@ import {LoginComponent} from "./pages/login/login.component";
 
 const routes: Routes = [
 
-  /*{
-    path: "",
-    pathMatch: "full",
-    redirectTo: "event"
-  },*/
+
 
   {
     path: "login",
@@ -17,9 +13,15 @@ const routes: Routes = [
   },
 
   {
-    path: "",
+    path: "home",
     data: {roles: ["ROLE_GUEST"]},
     loadComponent: () => import("./pages/event/event.component").then(m => m.EventComponent)
+  },
+
+  {
+    path: "**",
+    pathMatch: "full",
+    redirectTo: "login"
   },
 
 
