@@ -1,0 +1,83 @@
+{
+  "configVersion": 1,
+  "timestamp": 1676587608917,
+  "index": "https://mherczku.github.io/tollapps/index.html",
+  "assetGroups": [
+    {
+      "name": "Tollapps",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://mherczku.github.io/tollapps/500.00adf07ccbbf3d7e.js",
+        "https://mherczku.github.io/tollapps/assets/favicon/manifest.webmanifest",
+        "https://mherczku.github.io/tollapps/index.html",
+        "https://mherczku.github.io/tollapps/main.c9ef154f11e2a00b.js",
+        "https://mherczku.github.io/tollapps/polyfills.6d45f81796afc159.js",
+        "https://mherczku.github.io/tollapps/runtime.a7654bf62283972b.js",
+        "https://mherczku.github.io/tollapps/styles.4bda8e23641ff6c0.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://mherczku.github.io/tollapps/assets/favicon/android-chrome-192x192.png",
+        "https://mherczku.github.io/tollapps/assets/favicon/android-chrome-512x512.png",
+        "https://mherczku.github.io/tollapps/assets/favicon/apple-touch-icon.png",
+        "https://mherczku.github.io/tollapps/assets/favicon/browserconfig.xml",
+        "https://mherczku.github.io/tollapps/assets/favicon/favicon-16x16.png",
+        "https://mherczku.github.io/tollapps/assets/favicon/favicon-32x32.png",
+        "https://mherczku.github.io/tollapps/assets/favicon/favicon.ico",
+        "https://mherczku.github.io/tollapps/assets/favicon/mstile-150x150.png",
+        "https://mherczku.github.io/tollapps/assets/favicon/safari-pinned-tab.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://mherczku.github.io/tollapps/500.00adf07ccbbf3d7e.js": "aaaff35a3d4c9f209a0265e59a1f451d50182cb6",
+    "https://mherczku.github.io/tollapps/assets/favicon/android-chrome-192x192.png": "2bf8a40e44b1f666103c3e922efc13eb8b2f76d3",
+    "https://mherczku.github.io/tollapps/assets/favicon/android-chrome-512x512.png": "d918ad814297d15144c633958bbb782e26e12879",
+    "https://mherczku.github.io/tollapps/assets/favicon/apple-touch-icon.png": "42bc39b859995d995023f0e211e9f793ec145147",
+    "https://mherczku.github.io/tollapps/assets/favicon/browserconfig.xml": "5f90b84ae2a3c71f59e210a0155ffe58fa7fdc9e",
+    "https://mherczku.github.io/tollapps/assets/favicon/favicon-16x16.png": "a5b3e69c3f4648fbd754685e374b9b43e2a8f09b",
+    "https://mherczku.github.io/tollapps/assets/favicon/favicon-32x32.png": "96ec1349416d067267b07c934f4d8685375f51f3",
+    "https://mherczku.github.io/tollapps/assets/favicon/favicon.ico": "b127bc849dc98d852ecca1bd9a3205d7b7136811",
+    "https://mherczku.github.io/tollapps/assets/favicon/manifest.webmanifest": "73dba76eb3d66e3c8ee9fc816d56993415bf867d",
+    "https://mherczku.github.io/tollapps/assets/favicon/mstile-150x150.png": "2dd1108c84746216c2a24fff8434c2f8db607462",
+    "https://mherczku.github.io/tollapps/assets/favicon/safari-pinned-tab.svg": "e12ff401b6adf94b211698886324f93bb0c2abdc",
+    "https://mherczku.github.io/tollapps/index.html": "2eed75ea70023b382bc9bf08bd4a6085ce615709",
+    "https://mherczku.github.io/tollapps/main.c9ef154f11e2a00b.js": "8c51fe2cf6b19c319db8e2c7b0575bbeb4a171b5",
+    "https://mherczku.github.io/tollapps/polyfills.6d45f81796afc159.js": "edfac0cded2c065ce38a89473f543edce0a3e425",
+    "https://mherczku.github.io/tollapps/runtime.a7654bf62283972b.js": "943d1012a750090fdef9181e3aed05ff897c5278",
+    "https://mherczku.github.io/tollapps/styles.4bda8e23641ff6c0.css": "a118e664009ec0108be18daee903c713bf849e36"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
