@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1676662770557,
+  "timestamp": 1676667688787,
   "index": "https://mherczku.github.io/tollapps/index.html",
   "assetGroups": [
     {
@@ -14,7 +14,7 @@
         "https://mherczku.github.io/tollapps/500.728394a43c4e5466.js",
         "https://mherczku.github.io/tollapps/assets/favicon/manifest.webmanifest",
         "https://mherczku.github.io/tollapps/index.html",
-        "https://mherczku.github.io/tollapps/main.4f0c18dd8e23e2d0.js",
+        "https://mherczku.github.io/tollapps/main.eb4f08a291d2a64b.js",
         "https://mherczku.github.io/tollapps/polyfills.6d45f81796afc159.js",
         "https://mherczku.github.io/tollapps/runtime.fdc0cb2afb2a52ce.js",
         "https://mherczku.github.io/tollapps/styles.c7c51efad5f0033b.css"
@@ -55,8 +55,8 @@
     "https://mherczku.github.io/tollapps/assets/favicon/manifest.webmanifest": "716416858deb50091adba15ade2ae889fb7efd32",
     "https://mherczku.github.io/tollapps/assets/favicon/mstile-150x150.png": "2dd1108c84746216c2a24fff8434c2f8db607462",
     "https://mherczku.github.io/tollapps/assets/favicon/safari-pinned-tab.svg": "e12ff401b6adf94b211698886324f93bb0c2abdc",
-    "https://mherczku.github.io/tollapps/index.html": "ff5ff0ae2c6505d913a4693285646d886a780758",
-    "https://mherczku.github.io/tollapps/main.4f0c18dd8e23e2d0.js": "1a2f24ea8bfc850b2881d968971294eee271db95",
+    "https://mherczku.github.io/tollapps/index.html": "8a3167faeb6a24746cb81fba73caa166409c164b",
+    "https://mherczku.github.io/tollapps/main.eb4f08a291d2a64b.js": "d0e3760d8bf68480fef42685f4d940a64f93f84e",
     "https://mherczku.github.io/tollapps/polyfills.6d45f81796afc159.js": "edfac0cded2c065ce38a89473f543edce0a3e425",
     "https://mherczku.github.io/tollapps/runtime.fdc0cb2afb2a52ce.js": "24add43b4115ce5989fd5ad13c7733095d4e41b1",
     "https://mherczku.github.io/tollapps/styles.c7c51efad5f0033b.css": "5f62540259952f24953795d2162f7bd06158c6d7"
