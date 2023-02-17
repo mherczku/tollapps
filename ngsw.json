@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1676647779182,
+  "timestamp": 1676648133693,
   "index": "https://mherczku.github.io/tollapps/index.html",
   "assetGroups": [
     {
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://mherczku.github.io/tollapps/500.4875732304ff9c41.js",
+        "https://mherczku.github.io/tollapps/500.728394a43c4e5466.js",
         "https://mherczku.github.io/tollapps/assets/favicon/manifest.webmanifest",
         "https://mherczku.github.io/tollapps/index.html",
         "https://mherczku.github.io/tollapps/main.ad69c1d5d480bdad.js",
         "https://mherczku.github.io/tollapps/polyfills.6d45f81796afc159.js",
-        "https://mherczku.github.io/tollapps/runtime.36e6bd939221b7cc.js",
+        "https://mherczku.github.io/tollapps/runtime.fdc0cb2afb2a52ce.js",
         "https://mherczku.github.io/tollapps/styles.4255e06821dd1fc7.css"
       ],
       "patterns": []
@@ -44,7 +44,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://mherczku.github.io/tollapps/500.4875732304ff9c41.js": "167a02a7f442e68568a29aad4c4ce94ee078b9d6",
+    "https://mherczku.github.io/tollapps/500.728394a43c4e5466.js": "b45b656f0ed93ac64b6344a55401cfed8f1576e3",
     "https://mherczku.github.io/tollapps/assets/favicon/android-chrome-192x192.png": "2bf8a40e44b1f666103c3e922efc13eb8b2f76d3",
     "https://mherczku.github.io/tollapps/assets/favicon/android-chrome-512x512.png": "d918ad814297d15144c633958bbb782e26e12879",
     "https://mherczku.github.io/tollapps/assets/favicon/apple-touch-icon.png": "42bc39b859995d995023f0e211e9f793ec145147",
@@ -55,10 +55,10 @@
     "https://mherczku.github.io/tollapps/assets/favicon/manifest.webmanifest": "1f766776f15ee45aa71af498a28b09fd2a2ac856",
     "https://mherczku.github.io/tollapps/assets/favicon/mstile-150x150.png": "2dd1108c84746216c2a24fff8434c2f8db607462",
     "https://mherczku.github.io/tollapps/assets/favicon/safari-pinned-tab.svg": "e12ff401b6adf94b211698886324f93bb0c2abdc",
-    "https://mherczku.github.io/tollapps/index.html": "636561a8e6ca05a6f6720b3aee0449b1b708b722",
+    "https://mherczku.github.io/tollapps/index.html": "042cf02cf1717c0b95cdfdd493ec26784c49e812",
     "https://mherczku.github.io/tollapps/main.ad69c1d5d480bdad.js": "1bb73368b8024f12effa1689355dc03521cb2f4a",
     "https://mherczku.github.io/tollapps/polyfills.6d45f81796afc159.js": "edfac0cded2c065ce38a89473f543edce0a3e425",
-    "https://mherczku.github.io/tollapps/runtime.36e6bd939221b7cc.js": "08357eac6022e4b552356623e498a5ca272f53d3",
+    "https://mherczku.github.io/tollapps/runtime.fdc0cb2afb2a52ce.js": "24add43b4115ce5989fd5ad13c7733095d4e41b1",
     "https://mherczku.github.io/tollapps/styles.4255e06821dd1fc7.css": "f4563ef5f8bf1d3ef873d1875e2e9244aad1df30"
   },
   "navigationUrls": [
