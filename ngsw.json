@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1676669672808,
+  "timestamp": 1676670296864,
   "index": "https://mherczku.github.io/tollapps/index.html",
   "assetGroups": [
     {
@@ -13,6 +13,7 @@
       "urls": [
         "https://mherczku.github.io/tollapps/500.728394a43c4e5466.js",
         "https://mherczku.github.io/tollapps/assets/favicon/manifest.webmanifest",
+        "https://mherczku.github.io/tollapps/firebase-messaging-sw.js",
         "https://mherczku.github.io/tollapps/index.html",
         "https://mherczku.github.io/tollapps/main.eb4f08a291d2a64b.js",
         "https://mherczku.github.io/tollapps/polyfills.6d45f81796afc159.js",
@@ -55,6 +56,7 @@
     "https://mherczku.github.io/tollapps/assets/favicon/manifest.webmanifest": "716416858deb50091adba15ade2ae889fb7efd32",
     "https://mherczku.github.io/tollapps/assets/favicon/mstile-150x150.png": "2dd1108c84746216c2a24fff8434c2f8db607462",
     "https://mherczku.github.io/tollapps/assets/favicon/safari-pinned-tab.svg": "e12ff401b6adf94b211698886324f93bb0c2abdc",
+    "https://mherczku.github.io/tollapps/firebase-messaging-sw.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
     "https://mherczku.github.io/tollapps/index.html": "8a3167faeb6a24746cb81fba73caa166409c164b",
     "https://mherczku.github.io/tollapps/main.eb4f08a291d2a64b.js": "d0e3760d8bf68480fef42685f4d940a64f93f84e",
     "https://mherczku.github.io/tollapps/polyfills.6d45f81796afc159.js": "edfac0cded2c065ce38a89473f543edce0a3e425",
