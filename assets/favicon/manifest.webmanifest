@@ -1,7 +1,7 @@
 {
-  "name": "Tollapps v1.3",
+  "name": "Tollapps v1.4",
   "short_name": "Tollapps",
-  "theme_color": "#1976d2",
+  "theme_color": "#0b70d4",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
