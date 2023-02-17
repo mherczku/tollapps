@@ -7,13 +7,13 @@ const routes: Routes = [
 
   {
     path: "login",
-    data: {roles: ["ROLE_GUEST"]},
+    data: {roles: ["ROLE_GUEST"], animation: 'login'},
     component: LoginComponent
   },
 
   {
     path: "home",
-    data: {roles: ["ROLE_USER"]},
+    data: {roles: ["ROLE_USER"], animation: 'home'},
     canMatch: [() => inject(EventService).hasUserPermission()],
     loadComponent: () => import("./pages/event/event.component").then(m => m.EventComponent)
   },

@@ -7,6 +7,7 @@ import {FormsModule} from "@angular/forms";
 import {AlertComponent} from "./components/alert/alert.component";
 import {AppRoutingModule} from "./app-routing.module";
 import { ServiceWorkerModule } from '@angular/service-worker';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
