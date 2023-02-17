@@ -12,11 +12,11 @@ export const slideUpAnimation = [
     group([
       query(':enter', [
           style({ bottom: '-100%', opacity: 0 }),
-          animate('200ms ease-in', style({ bottom: 0, opacity: 1 }))
+          animate('300ms ease-in', style({ bottom: 0, opacity: 1 }))
       ]),
       query(':leave', [
           style({ top: 0, opacity: 1 }),
-          animate('200ms ease-in', style({ top: '-100%', opacity: 0 }))
+          animate('300ms ease-in', style({ top: '-100%', opacity: 0 }))
       ]),
     ])
   ];

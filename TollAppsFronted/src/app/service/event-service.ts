@@ -44,7 +44,7 @@ export class EventService {
   }
 
   subscribe() {
-    this.eventSource = new EventSource(`${this.baseUrl}/events/sse`);
+    this.eventSource = new EventSource(`${this.baseUrl}/events/sse`, {withCredentials: true});
     //let subscription = new Subject();
     this.eventSource.addEventListener("message", event=> {
       const newEvent: Event = JSON.parse(event.data)

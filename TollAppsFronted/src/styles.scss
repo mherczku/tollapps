@@ -13,6 +13,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  @media all and (display-mode: standalone) {
+    background-color: #010a32;
+  }
 }
 
 p {
