@@ -44,7 +44,6 @@ export class CardEventComponent implements OnInit, OnDestroy {
 
   private checkDeadLine() {
     this.deadLined = new Date(this._currentEvent.deadline) <= new Date(Date.now())
-    this.deadLined = false
   }
 
   checkApplication() {

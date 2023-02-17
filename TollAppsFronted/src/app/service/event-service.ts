@@ -24,6 +24,10 @@ export class EventService {
     return this.username.asObservable();
   }
 
+  hasUserPermission(): boolean {
+    return (this.username.value !== "Vendég")
+  }
+
   setEvent(event: Event) {
     this.currentEvent.next(event)
   }

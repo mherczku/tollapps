@@ -4,6 +4,8 @@
 
   <app-card-event></app-card-event>
 
+  <button (click)="logout()" class="btn btn-remove tx-sm">Kilépés</button>
+
   <div *ngIf="applying" (click)="applying = false" class="modal">
     <div (click)="$event.stopPropagation()" class="applying">
       <p class="applying-title">Hányan fogtok jönni?</p>

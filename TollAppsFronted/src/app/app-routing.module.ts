@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
+import {inject, NgModule} from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {LoginComponent} from "./pages/login/login.component";
+import {EventService} from "./service/event-service";
 
 const routes: Routes = [
-
-
 
   {
     path: "login",
@@ -14,7 +13,8 @@ const routes: Routes = [
 
   {
     path: "home",
-    data: {roles: ["ROLE_GUEST"]},
+    data: {roles: ["ROLE_USER"]},
+    canMatch: [() => inject(EventService).hasUserPermission()],
     loadComponent: () => import("./pages/event/event.component").then(m => m.EventComponent)
   },
 
@@ -23,7 +23,6 @@ const routes: Routes = [
     pathMatch: "full",
     redirectTo: "login"
   },
-
 
 ];
 

@@ -6,6 +6,7 @@ import {AlertService} from "../../service/alert-service";
 import {FormsModule} from "@angular/forms";
 import {CardEventComponent} from "../../components/card-event/card-event.component";
 import {Event} from "../../type/event-type";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-event',
@@ -22,7 +23,7 @@ export class EventComponent  implements OnInit, OnDestroy {
   applying: boolean = false;
   applicationType: number = 0;
 
-  constructor(private eventService: EventService, private alertService: AlertService) {
+  constructor(private router: Router, private eventService: EventService, private alertService: AlertService) {
   }
 
   ngOnInit(): void {
@@ -64,4 +65,8 @@ export class EventComponent  implements OnInit, OnDestroy {
     this.subsDestroy.complete()
   }
 
+  logout() {
+    localStorage.clear()
+    this.router.navigateByUrl("login");
+  }
 }

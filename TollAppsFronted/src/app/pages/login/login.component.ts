@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {EventService} from "../../service/event-service";
@@ -12,7 +12,7 @@ import {AlertService} from "../../service/alert-service";
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit{
   loginForm!: FormGroup
 
   constructor(private alertService: AlertService, private router: Router, private fb: FormBuilder, private eventService: EventService) {
@@ -21,11 +21,23 @@ export class LoginComponent {
     })
   }
 
+  ngOnInit(): void {
+    const username = localStorage.getItem('username')
+    if(username) {
+      this.login(username)
+    }
+  }
+
   onSubmitLogin() {
     const name = this.loginForm.value.name.trim();
+    this.login(name)
+  }
+
+  login(name: string) {
     this.eventService.login(name).subscribe({
       next: _value => {
         this.eventService.setUsername(name)
+        localStorage.setItem('username', name);
         this.router.navigateByUrl("/home")
       },
       error: err =>  {
