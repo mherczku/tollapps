@@ -30,6 +30,13 @@ export class LoginComponent implements OnInit{
 
   onSubmitLogin() {
     const name = this.loginForm.value.name.trim();
+    /*Notification.requestPermission().then(p => {
+      console.log(p)
+      if(p === "granted"){
+        const n = new Notification('To do list', {body: "HElo helo ez egy notification"})
+      }
+    })*/
+
     this.login(name)
   }
 
