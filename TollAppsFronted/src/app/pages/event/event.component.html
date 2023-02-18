@@ -6,16 +6,5 @@
 
   <button (click)="logout()" class="btn btn-remove tx-sm">Kilépés</button>
 
-  <div *ngIf="applying" (click)="applying = false" class="modal">
-    <div (click)="$event.stopPropagation()" class="applying">
-      <p class="applying-title">Hányan fogtok jönni?</p>
-      <div class="applying-input">
-        <input style="width: 100%" type="range" id="vol" name="vol" min="0" max="2" [(ngModel)]="applicationType">
-        <p class="tx-center tx-base">{{applicationType === 0 ? 'Egyedül' : applicationType === 1 ? 'Te + 1 Fő' : 'Te + 2 Fő'}}</p>
-      </div>
-      <button (click)="saveApplication()" class="btn btn-blue">Mentés</button>
-    </div>
-  </div>
-
 </div>
 

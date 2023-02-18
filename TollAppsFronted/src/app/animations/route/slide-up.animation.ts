@@ -17,6 +17,6 @@ export const slideUpAnimation = [
       query(':leave', [
           style({ top: 0, opacity: 1 }),
           animate('300ms ease-in', style({ top: '-100%', opacity: 0 }))
-      ]),
+      ], {optional: true}),
     ])
   ];

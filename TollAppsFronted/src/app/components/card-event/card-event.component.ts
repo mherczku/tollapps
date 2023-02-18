@@ -1,9 +1,11 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit, Type} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {Event} from "../../type/event-type";
 import {Subject, takeUntil, timeout} from "rxjs";
 import {EventService} from "../../service/event-service";
 import {AlertService} from "../../service/alert-service";
+import {NgxModalxService} from "ngx-modalx";
+import {CardApplyComponent} from "../card-apply/card-apply.component";
 
 @Component({
   selector: 'app-card-event',
@@ -26,7 +28,7 @@ export class CardEventComponent implements OnInit, OnDestroy {
   applied: boolean = false;
   username: string = ""
 
-  constructor(private eventService: EventService, private alertService: AlertService) {
+  constructor(private eventService: EventService, private alertService: AlertService, private modalService: NgxModalxService) {
     eventService.currentUsername().pipe(takeUntil(this.subsDestroy)).subscribe( username => {
       this.username = username
     })
@@ -88,7 +90,7 @@ export class CardEventComponent implements OnInit, OnDestroy {
           })
       }
     } else {
-      this.eventService.applying.next(true)
+      this.modalService.open(CardApplyComponent as Type<Component>)
     }
   }
 

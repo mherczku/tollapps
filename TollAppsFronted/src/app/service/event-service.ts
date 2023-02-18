@@ -18,7 +18,6 @@ export class EventService {
     return this.currentEvent.asObservable();
   }
 
-  applying: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   private username: BehaviorSubject<string> = new BehaviorSubject<string>("Vendég");
   currentUsername(): Observable<string> {
     return this.username.asObservable();
