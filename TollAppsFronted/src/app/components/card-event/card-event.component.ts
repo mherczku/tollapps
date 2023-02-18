@@ -6,13 +6,27 @@ import {EventService} from "../../service/event-service";
 import {AlertService} from "../../service/alert-service";
 import {NgxModalxService} from "ngx-modalx";
 import {CardApplyComponent} from "../card-apply/card-apply.component";
+import {animate, query, stagger, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-card-event',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './card-event.component.html',
-  styleUrls: ['./card-event.component.scss']
+  styleUrls: ['./card-event.component.scss'],
+  /*animations: fadeAnimation*/
+  animations: [
+    trigger('listAnimation', [
+      transition('* => *', [
+        query(':enter', [
+          style({opacity: 0}),
+          stagger(500, [
+            animate('0.5s', style({opacity: 1}))
+          ])
+        ], {optional: true})
+      ])
+    ])
+  ]
 })
 export class CardEventComponent implements OnInit, OnDestroy {
 
@@ -29,10 +43,10 @@ export class CardEventComponent implements OnInit, OnDestroy {
   username: string = ""
 
   constructor(private eventService: EventService, private alertService: AlertService, private modalService: NgxModalxService) {
-    eventService.currentUsername().pipe(takeUntil(this.subsDestroy)).subscribe( username => {
+    eventService.currentUsername().pipe(takeUntil(this.subsDestroy)).subscribe(username => {
       this.username = username
     })
-    eventService.currentEventWatch().pipe(takeUntil(this.subsDestroy)).subscribe( event => {
+    eventService.currentEventWatch().pipe(takeUntil(this.subsDestroy)).subscribe(event => {
       this._currentEvent = event
       this.checkDeadLine()
       this.checkApplication()
