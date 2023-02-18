@@ -14,14 +14,19 @@ import {animate, query, stagger, style, transition, trigger} from "@angular/anim
   imports: [CommonModule],
   templateUrl: './card-event.component.html',
   styleUrls: ['./card-event.component.scss'],
-  /*animations: fadeAnimation*/
   animations: [
     trigger('listAnimation', [
       transition('* => *', [
         query(':enter', [
-          style({opacity: 0}),
-          stagger(500, [
-            animate('0.5s', style({opacity: 1}))
+          style({opacity: 0, height: 0}),
+          stagger(300, [
+            animate('0.3s', style({opacity: 1, height: '*'}))
+          ])
+        ], {optional: true}),
+        query(':leave', [
+          style({opacity: 1, height: '*'}),
+          stagger(300, [
+            animate('0.3s', style({opacity: 0, height: 0}))
           ])
         ], {optional: true})
       ])
