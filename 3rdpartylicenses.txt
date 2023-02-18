@@ -19,6 +19,8 @@ MIT
 @angular/service-worker
 MIT
 
+ngx-modalx
+
 rxjs
 Apache-2.0
                                Apache License
