@@ -1,0 +1,8 @@
+<div (click)="$event.stopPropagation()" class="applying">
+  <p class="applying-title">Mennyibe kerültek a pályák összesen?</p>
+  <div class="applying-input">
+    <p class="tx-center tx-base">Összesen: {{priceSum | number:'1.0-0'}} Ft</p>
+    <input style="width: 100%" type="range" id="vol" name="vol" min="2500" max="8000" step="100" [(ngModel)]="priceSum">
+    <p class="tx-center tx-base">{{(priceSum/(quantity > 0 ? quantity : 1)) | number:'1.0-0'}} Ft / Fő</p>
+  </div>
+</div>

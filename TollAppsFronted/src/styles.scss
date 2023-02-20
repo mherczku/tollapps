@@ -23,9 +23,20 @@ p {
 }
 
 .background-color {
-  background: linear-gradient(249deg, #44ff00, #00a0ff);
+  background: linear-gradient(249deg, #23dc00, #007cc8);
   background-size: 360% 360%;
   animation: gradient-animation 40s ease infinite;
   width: fit-content;
   border-radius: 10px;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }

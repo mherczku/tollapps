@@ -1,10 +1,10 @@
 <section class="background-color">
 
-  <div *ngIf="_currentEvent.id !== -1" class=" event-container">
+  <div *ngIf="_currentEvent.id !== -1" class="event-container">
 
     <p class="event-title">Tollas - {{_currentEvent.date | date:'y, MMMM d'}} - Vasárnap</p>
 
-    <p class="p-title">Jelentkeztek:</p>
+    <p class="p-title">Jelentkeztek: {{quantity}} fő</p>
     <div [@listAnimation]="_currentEvent.participants.length" class="event-participants">
       <div class="event-participant" *ngFor="let p of _currentEvent.participants">
         <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,8 +31,10 @@
       </div>
     </div>
 
-    <button [disabled]="deadLined" class="btn" (click)="applyBtnClicked()"
-            [ngClass]="applied ? 'btn-remove' : 'btn-add'">{{applied ? 'Jelentkezés törlése' : 'Jelentkezés'}}</button>
+    <button [disabled]="deadLined" *ngIf="!deadLined" class="btn" (click)="applyBtnClicked()"
+            [ngClass]="applied ? 'btn-remove' : 'btn-add'">{{applied ? 'Visszamondás' : 'Jelentkezés'}}</button>
+
+    <button *ngIf="deadLined" (click)="openCalculator()" class="btn btn-calc tx-white">Számold ki</button>
 
     <p class="deadline tx-sm">Határidő: {{deadLined ? 'Lejárt' : _currentEvent.deadline | date:'y, MMMM d, hh:mm'}} - Péntek
       reggel</p>

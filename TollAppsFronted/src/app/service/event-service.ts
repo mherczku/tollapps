@@ -12,6 +12,7 @@ export class EventService {
   private baseUrl = environment.apiBaseUrl;
   constructor(private http: HttpClient) { }
 
+  quantityOfPeople: number = 0
   private eventSource?: EventSource
   private currentEvent: BehaviorSubject<Event> = new BehaviorSubject<Event>({id: -1, date: new Date, deadline: new Date, participants: []});
   currentEventWatch(): Observable<Event> {

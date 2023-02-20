@@ -7,6 +7,7 @@ import {AlertService} from "../../service/alert-service";
 import {NgxModalxService} from "ngx-modalx";
 import {CardApplyComponent} from "../card-apply/card-apply.component";
 import {animate, query, stagger, style, transition, trigger} from "@angular/animations";
+import {CardCalculatorComponent} from "../card-calculator/card-calculator.component";
 
 @Component({
   selector: 'app-card-event',
@@ -46,6 +47,7 @@ export class CardEventComponent implements OnInit, OnDestroy {
 
   applied: boolean = false;
   username: string = ""
+  quantity: number = 0;
 
   constructor(private eventService: EventService, private alertService: AlertService, private modalService: NgxModalxService) {
     eventService.currentUsername().pipe(takeUntil(this.subsDestroy)).subscribe(username => {
@@ -55,6 +57,7 @@ export class CardEventComponent implements OnInit, OnDestroy {
       this._currentEvent = event
       this.checkDeadLine()
       this.checkApplication()
+      this.checkQuantity()
     })
   }
 
@@ -113,11 +116,26 @@ export class CardEventComponent implements OnInit, OnDestroy {
     }
   }
 
+  private checkQuantity() {
+    this.quantity = this._currentEvent.participants.length
+    this._currentEvent.participants.forEach(p => {
+      if (p.includes("1")) {
+        this.quantity += 1;
+      } else if (p.includes("2")) {
+        this.quantity += 2;
+      }
+    })
+    this.eventService.quantityOfPeople = this.quantity
+
+  }
+
+  openCalculator() {
+    this.modalService.open(CardCalculatorComponent as Type<Component>)
+  }
+
   ngOnDestroy(): void {
     this.subsDestroy.next("")
     this.subsDestroy.complete()
     this.eventService.closeSubscription()
   }
-
-
 }
