@@ -21,6 +21,8 @@ MIT
 
 ngx-modalx
 
+ngx-seo-routes
+
 rxjs
 Apache-2.0
                                Apache License
