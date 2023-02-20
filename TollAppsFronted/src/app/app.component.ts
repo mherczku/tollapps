@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {ChildrenOutletContexts} from "@angular/router";
 import {routeAnimations} from "./animations/route/route.animations";
+import {NgxSeoRoutesService, SeoData} from "ngx-seo-routes";
 /*import {initializeApp} from "firebase/app";
 import {getAnalytics} from "firebase/analytics";
 import {getMessaging, getToken, onMessage} from "firebase/messaging";*/
@@ -14,8 +15,20 @@ import {getMessaging, getToken, onMessage} from "firebase/messaging";*/
 export class AppComponent {
   title = 'TollApps';
 
-  constructor(private contexts: ChildrenOutletContexts) {
+  private defaultSeo: SeoData = {
+
+    page_title: "Tollapps",
+    page_description: "Tollas App a csapatnak",
+    keywords: "tollapps",
+    og_title: "Tollapps",
+    og_url: "https://mherczku.github.io/tollapps/",
+    og_image: "assets/favicon/android-chrome-512x512.png",
+    og_description: "Tollas App a csapatnak"
+  }
+
+  constructor(private seoService: NgxSeoRoutesService, private contexts: ChildrenOutletContexts) {
     //this.initFirebase()
+    this.seoService.setDefaultSeoData(this.defaultSeo)
   }
 
   /*private initFirebase() {
