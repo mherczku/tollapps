@@ -36,6 +36,6 @@
 
     <button *ngIf="deadLined" (click)="openCalculator()" class="btn btn-calc tx-white">Számold ki</button>
 
-    <p class="deadline tx-sm">Határidő: {{deadLined ? 'Lejárt' : _currentEvent.deadline | date:'y, MMMM d, HH:mm'}}</p>
+    <p class="deadline tx-sm">Határidő: {{_currentEvent.deadline | date:'y, MMMM d, HH:mm'}} {{deadLined ? ' - Lejárt' : ''}}</p>
   </div>
 </section>
